@@ -57,7 +57,6 @@
     .links__item ul{
        @apply max-h-0 overflow-hidden duration-[.5s];
     }
-
     .links__item ul.open{
         @apply max-h-[25rem] duration-[.5s];
     }
