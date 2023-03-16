@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Premium</title>
     <link rel="stylesheet" href="./output.css">
+    <script src="https://kit.fontawesome.com/25db722303.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
+    <div class="joshuaulaga absolute h-[100vh] top-0 w-0 bg-dark opacity-[.5] z-[1]">
 
+    </div>
 
     <header class="header bg-dark relative">
         <div class="container">
-            <div class="header__wrapper flex items-center justify-between">
+            <div class="header__wrapper flex items-center justify-between -z-[1]">
                 <div class="branding">
-                    <img src="img/logofinal.png" alt="" class="w-[10rem]">
+                    <img src="img/logofinal.png" alt="" class="w-[8rem]">
                 </div>
-                <div class="header__nav text-light">
-                    <ul>
-                        <li><a href="" class="font-bold text-[2rem] hover:text-green">Premium</a></li>
-                        <li><a href="" class="font-bold text-[2rem] hover:text-green">Support</a></li>
-                        <li><a href="" class="font-bold text-[2rem] hover:text-green">Download</a></li>
-                        <li class="w-fit rotate-90 ml-[.8rem] my-[2rem]">|</li>
-                        <li><a href="" class="font-semibold text-[1.5rem] hover:text-green">Sign Up</a></li>
-                        <li><a href="" class="font-semibold text-[1.5rem] hover:text-green">Log in</a></li>
+                <div class="header__nav text-light  lg:items-center">
+                    <ul class="relative lg:flex">
+                        <li><a href="" class="font-bold text-[2rem] hover:text-green lg:font-semibold  lg:text-[1.3rem]">Premium</a></li>
+                        <li><a href="" class="font-bold text-[2rem] hover:text-green lg:font-semibold  lg:text-[1.3rem]">Support</a></li>
+                        <li><a href="" class="font-bold text-[2rem] hover:text-green lg:font-semibold  lg:text-[1.3rem]">Download</a></li>
+                        <li class="w-fit rotate-90 ml-[.8rem] my-[2rem] lg:rotate-[0deg] lg:ml-0 lg:my-0 ">|</li>
+                        <li><a href="" class="font-semibold text-[1.5rem] hover:text-green lg:font-semibold  lg:text-[1.3rem]">Sign Up</a></li>
+                        <li><a href="" class="font-semibold text-[1.5rem] hover:text-green lg:font-semibold lg:text-[1.3rem]">Log in</a></li>
+                        <figure ><img src="img/logofinal.png" alt="" class="w-[8rem] absolute bottom-[2rem] left-[2rem] lg:hidden "></figure>
                     </ul>
                 </div>
-                <div class="toggle__menu z-[999]">
+                <div class="toggle__menu z-[999] lg:hidden">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -35,6 +39,146 @@
             </div>
         </div>
     </header>
+
+    <section class="banner bg-bgdark py-[3rem]">
+        <div class="container lg:flex">
+            <div class="banner__wrapper ">
+                <div class="branding ">
+                        <h1 class="text-textprimary text-[1.7rem] font-bold lg:text-[2.5rem]">Get Premium free for 2 months</h1>
+                        <h2 class=" text-textprimary text-[1.2rem] my-[1.5rem] lg:text-[1.7rem] font-semibold">Limited time offer for Individual or Student plans. Cancel anytime.</h2>
+                    </div>
+                    <div class="button lg:flex ">
+                        <ul>
+                            <li class="pb-[.7rem] lg:pr-[1rem]">
+                                <a href="" class="btn bg-dark rounded-[3rem] text-[1rem] w-full text-center text-textprimary font-bold hover:scale-[1.09] hover:bg-green-900 lg:px-[1.5rem]  ">Get started</a>
+                            </li>
+                        </ul>
+                      
+                      <div class="view ">
+                        <ul>
+                            <li >
+                                <a href="" class="btn border-[.2rem] rounded-[3rem] text-[1rem] w-full text-center font-bold text-textprimary hover:scale-[1.09] hover:bg-green-900 lg:px-[1.5rem]">View Plans</a>
+                            </li>
+                        </ul>
+                        
+                      </div>
+                    </div>
+                    <p class=" text-textprimary text-[11.2px] py-[3rem] lg:max-w-[40rem]">Terms and conditions apply. Monthly subscription fee applies after. 2 months free only open to users who haven't already tried Premium. Offer ends March 31, 2023.
+                    </p>
+            </div>
+            <img src="img/ab678e040000ed3a72614f45c939dbc035cf4356.jpg" alt="" class="w-[20rem] m-auto lg:w-[30rem]">
+        </div>
+    </section>
+
+    <section class="premium ">
+        <div class="container">
+            <div class="premium__wrapper">
+                <div class="branding">
+                    <h2 class="text-[1.8rem] font-bold text-center mb-[2.5rem]">Why go Premium?</h2>
+                </div>
+                <div class="everycard lg:flex lg:justify-center items-center lg:gap-[7.5rem]">
+                <div class="card flex mb-[4rem] lg:flex-col lg:items-center lg:justify-center ">
+                    <img src="img/note.jpg" alt="" class="w-[8rem] pr-[1rem] lg:w-[15rem] lg:pb-[2rem] lg:px-[2rem]">
+                    <div class="card__item py-[1rem] ">
+                        <h2 class="font-bold text-[1.2rem] mb-[1rem] lg:mb-[.5rem]">Download Music</h2>
+                        <p class="lg:text-center">Listen anywhere.</p>
+                    </div>
+                </div>
+                <div class="card flex mb-[4rem] lg:flex-col ">
+                    <img src="img/warning.jpg" alt="" class="w-[7.5rem] mr-4 lg:w-[15rem] lg:pb-[2rem] lg:items-center lg:px-[2rem]">
+                    <div class="card__item py-[1rem]">
+                        <h2 class="font-bold text-[1.2rem] mb-[1rem] lg:mb-[.5rem]">Add-free music listening.</h2>
+                        <p class="lg:text-center">Enjoy nonstop music.</p>
+                    </div>
+                </div>
+                <div class="card flex mb-[4rem] lg:flex-col">
+                    <img src="img/music.jpg" alt="" class="w-[8rem] pr-[1rem] lg:w-[15rem] lg:pb-[2rem] lg:px-[2rem]">
+                    <div class="card__item py-[1rem]">
+                        <h2 class="font-bold text-[1.2rem] mb-[1rem] lg:mb-[.5rem] text-center">Play any song.</h2>
+                        <p class="lg:text-center">Even mobile.</p>
+                    </div>
+                </div>
+                <div class="card flex mb-[4rem] lg:flex-col">
+                    <img src="img/play.jpg" alt="" class="w-[8rem] pr-[1rem] lg:w-[15rem] lg:pb-[2rem] lg:px-[2rem]">
+                    <div class="card__item py-[1rem]">
+                        <h2 class="font-bold text-[1.2rem] mb-[1rem] lg:mb-[.5rem] text-center">Unlimited Skips</h2>
+                        <p class="lg:text-center">Just hit next.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="links bg-dark">
+        <div class="container">
+            <div class="links__wrapper lg:grid-cols-3">
+                <img src="img/logofinal.png" alt="" class="w-[7rem]">
+                <div class="links__item my-[4rem]">
+                    <h4 span class=" text-white opacity-50 flex justify-between items-center">COMPANY</span><i class="fa-solid fa-chevron-down text-white lg:hidden"></i></h4>
+                    <ul class="text-white block">
+                        <li><a href="" >About</a></li>
+                        <li><a href="" class="py-[3rem]">Jobs</a></li>
+                        <li><a href="">For the Record</a></li>
+                    </ul>
+                </div>
+                <div class="links__item my-[4rem]">
+                    <h4 span class=" text-white opacity-50 flex justify-between items-center">COMMUNITIES</span><i class="fa-solid fa-chevron-down text-white lg:hidden"></i></h4>
+                    <ul class=" text-white">
+                        <li><a href="">For Artists</a></li>
+                        <li><a href="">Developers</a></li>
+                        <li class="spcial"><a href="">Advertising</a></li>
+                        <li class="my-[1.2rem]"><a href="">Investors</a></li>
+                        <li><a href="">Vendors</a></li>
+                    </ul>
+                </div>
+                <div class="links__item my-[4rem]">
+                    <h4 span class=" text-white opacity-50 flex justify-between items-center">USEFUL LINKS</span><i class="fa-solid fa-chevron-down text-white lg:hidden"></i></h4>
+                    <ul class="text-white ">
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Web Player</a></li>
+                        <li><a href="">Free Mobile App</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer bg-dark py-[1rem]">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="socmed ">
+                    <ul class="flex gap-[1rem]">
+                        <li><a href=""><i class="fa-brands fa-instagram text-[1.5rem] text-white p-[.5rem] bg-slate-900 rounded-[50%] hover:text-green" ></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter text-[1.5rem] text-white p-[.5rem] bg-slate-900 rounded-[50%] hover:text-green" ></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook text-[1.5rem] text-white p-[.5rem] bg-slate-900 rounded-[50%] hover:text-green" ></i></a></li>
+                    </ul>
+                    <div class="usa text-white text-right opacity-50">
+                        <a href=""><i class="fa-solid fa-earth-europe text-[.7rem] "></i></a> <span class="text-[.7rem]">USA</span>
+                    </div>
+                </div>
+
+                <div class="bottom ">
+                    <div class="left text-white">
+                        <ul class="flex text-[.7rem] gap-5 max-w-[20rem] mb-[1rem] opacity-50">
+                            <li><a href="">Legal</a></li>
+                            <li><a href="">Privacy Center</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Cookies</a></li>
+                        </ul>
+                    </div>
+                        <ul class=" flex text-[.7rem] gap-5 max-w-[20rem] opacity-50">
+                            <li><a href="">About Ads</a></li>
+                            <li><a href="">Cookies Settings</a></li>
+                        </ul>
+                    <div class="right text-white text-right ">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>

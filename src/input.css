@@ -15,16 +15,53 @@
         background-color: whitesmoke;
         display: block;
         border-radius: 5rem;
+        transition: .5s ease;
     }
     .toggle__menu span:nth-child(2){
         margin: .2rem 0;
-
+      
+    }
+    .toggle__menu.open span:first-child{
+        @apply translate-x-0 translate-y-[10px] rotate-[225deg] ease-out duration-[.5s];
+    }
+    .toggle__menu.open span:nth-child(2){
+       @apply opacity-0;
+    }
+    .toggle__menu.open span:last-child{
+        @apply translate-x-0 translate-y-[-4px] rotate-[-225deg] ease-in duration-[.5s];
     }
     .header__nav ul{
-        @apply absolute bg-dark right-0 top-0 w-0 h-[100vh] overflow-hidden p-0;
+        @apply absolute bg-dark right-0 top-0 w-0 h-[100vh] overflow-hidden p-0 z-[999] lg:static lg:w-full lg:h-auto;
     }
+    .header__nav ul li:not(:first-child),.header__nav ul li:not(:last-child){
+        @apply mx-[1rem]
+    }
+
     .header__nav ul.open{
         @apply w-[85%] p-[2rem];
     }
+    .joshuaulaga.show{
+       @apply w-full;
+    }
 
+    .btn{
+       @apply inline-block uppercase px-[4rem] py-[.8rem];
+    }
+    
+    .links__item i{
+        @apply duration-[.5s] text-[2rem];       
+    }
+    .links__item i.open{
+    @apply  rotate-[-180deg] duration-[.5s];
+    }
+    .links__item ul{
+       @apply max-h-0 overflow-hidden duration-[.5s];
+    }
+
+    .links__item ul.open{
+        @apply max-h-[25rem] duration-[.5s];
+    }
+    .links__item li:nth-child(2){
+        @apply my-[1.2rem]
+    }
 }
