@@ -17,3 +17,20 @@ links.forEach((go) => {
         go.querySelector("i").classList.toggle("open");
     })
 })
+
+
+
+// documunetation
+
+// const togglemenu = document.querySelector(".doc__toggle__menu");
+// const navi = document.querySelector(".doc__nav ul");
+// // const bg = document.querySelector(".joshuaulaga")
+
+// togglemenu.addEventListener("click", () =>{
+//     togglemenu.classList.toggle("open");
+//     navi.classList.toggle("open");
+//     navi.style=("transition: .5s ease")
+//     // malabo.classList.toggle("show");
+// })
+
+
